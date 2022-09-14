@@ -1,0 +1,67 @@
+*{
+    font-family: Cambria
+}
+h1.roxo {
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4b004c;
+}
+h2.rosaEscuro {
+    font-size: 25px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #c70452;
+}
+img {
+    border-radius: 50%;
+  }
+body,
+html{
+    background-color: #e0d1ed;
+}
+
+.centro{
+    display:grid;
+    place-items:center;
+}
+
+#abas{
+    list-style:none;
+    padding:0;
+}
+a:link {
+    color: #E6304E;
+}
+
+a:visited {
+    color: #c70452;
+}
+
+a:hover {
+    color: #4b004c;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  h2.centro {
+    text-align: center;
+}
+
+  #customers tr:hover {background-color: #ddd;}
+
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #a01010;
+    color: white;
+  }
