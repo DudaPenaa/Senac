@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="formulario.html">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+   <link rel="stylesheet" href="materialize/js/materialize.min.js">
+    <link rel="stylesheet" href="formulario.js">
+    <title>Formulario</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Formulário de Freelancer</legend>
+        
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+
+        <div class="input-field col s6">
+          <input placeholder="Insira seu nome" id="Nome" type="text" class="validate">
+          <label class="active" for="Nome">Nome</label>
+        </div>
+       
+        <div class="input-field col s6">
+          <input placeholder="Insira seu sobrenome" id="Sobrenome" type="text" class="validate">
+          <label class="active" for="Sobrenome">Sobrenome</label>
+        </div>
+      </div>
+      <div class="row">
+     
+      </div>
+      
+      <div class="row">
+        <div class="col s12"> </div>
+        <div class="input-field col s6">
+          <input placeholder="(99)99999-9999" id="telefone" type="text" class="validate">
+          <label class="active" for="telefone">Telefone</label>
+        </div>
+      
+      
+        <div class="input-field col s6">
+          <input placeholder="example@exemplo.com" id="email" type="email" class="validate">
+          <label class="active" for="email">Email</label>
+        </div>
+    </div>
+
+    <div>
+        <label for="Mensagem">Mensagem:</label>
+        <textarea name="caixatexto" id="caixatexto" cols="10" rows="5">Informe o que deseja</textarea>
+    </div>
+
+    <div class="input-field col s12">
+        <select class="browser-default" >
+          <option value="" disabled selected >Escolha uma opção</option>
+          <option value="1">Português (pt-br)</option>
+          <option value="2">Inglês</option>
+          <option value="3">Espanhol</option>
+        </select>
+        <label class="active">Língua</label>
+      </div>
+
+      <label style="color:black; font-size: 15px;">Protótipo (Requisitos) </label>
+     <input type="file" name="arquivos" id="arquivos">
+
+     <div class="input-field col s12">
+        <select multiple>
+          <option value="" disabled selected>Selecione 1 ou mais linguagens</option>
+          <option value="1">PHP</option>
+          <option value="2">JS</option>
+          <option value="3">Java</option>
+        </select>
+        <label>As Linguagens que você prefere</label>
+      </div>
+
+      <div>
+        <label style="color:black; font-size: 15px;" >Banco de dados</label>
+            <label>
+              <input type="checkbox" />
+              <span>MySQL</span>
+            </label>
+
+          <b> | </b>
+
+          <label>
+            <input type="checkbox" />
+            <span>Postgresql</span>
+          </label>
+
+        <b> | </b>
+
+        <label>
+            <input type="checkbox" />
+            <span>MongoDB</span>
+          </label>
+
+          <b> | </b>
+
+          <label>
+            <input type="checkbox" />
+            <span>N/A</span>
+          </label>
+          <B>|</B>
+
+          <label>
+            <input type="checkbox" />
+            <span>Outra</span>
+          </label>
+      </div>
+<br>
+      <div>
+        <label style="color:black; font-size: 15px;" >Turno para Reuniões</label>
+        <label>
+            <input name="group1" type="radio" />
+            <span>Yellow</span>
+          </label>
+    
+          <b>|</b>
+          <label>
+            <input name="group1" type="radio" />
+            <span>Tarde</span>
+          </label>
+
+          <b>|</b>
+
+          <label>
+            <input name="group1" type="radio" />
+            <span>Noite</span>
+          </label>
+
+          <b>|</b>
+      </div>
+      <br>
+    <div>
+        <label style="color:black; font-size: 15px;">Horário Sugerido</label>
+        <input type="time" name="usr_horario">
+    </div>
+
+<br>
+
+<div>
+    <label style="color:black; font-size: 15px;">Data Prevista Entrega<label><span class="aster">*</span>
+        <input type="date" name="prev_" required>
+</div>
+
+
+
+
+    </form>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var sel = document.querySelectorAll('select');
+      M.FormSelect.init(sel)
+      });
+  </script>
+
+  </div>
+  <br>
+
+<p>
+    <input type="submit" value="Enviar">
+    <input type="submit" value="Limpar">
+</p>
+
+
+
+</body>
+</html>
